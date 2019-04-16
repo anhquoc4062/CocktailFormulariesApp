@@ -1,0 +1,71 @@
+--------------------------------------------------------
+--  File created - Th? ba-tháng tý-16-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table GLASSES
+--------------------------------------------------------
+
+  CREATE TABLE "ANHQUOC4062"."GLASSES" 
+   (	"IDGLASS" NUMBER GENERATED ALWAYS AS IDENTITY MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE  NOKEEP  NOSCALE , 
+	"STRGLASS" VARCHAR2(26 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+REM INSERTING into ANHQUOC4062.GLASSES
+SET DEFINE OFF;
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('1','Highball glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('2','Cocktail glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('3','Old-fashioned glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('4','Collins glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('5','Pousse cafe glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('6','Champagne flute');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('7','Whiskey sour glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('8','Brandy snifter');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('9','White wine glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('10','Nick and Nora Glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('11','Hurricane glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('12','Coffee mug');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('13','Shot glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('14','Jar');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('15','Irish coffee cup');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('16','Punch bowl');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('17','Pitcher');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('18','Pint glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('19','Copper Mug');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('20','Wine Glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('21','Cordial glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('22','Beer mug');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('23','Margarita/Coupette glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('24','Beer pilsner');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('25','Beer Glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('26','Parfait glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('27','Mason jar');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('28','Margarita glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('29','Martini Glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('30','Balloon Glass');
+Insert into ANHQUOC4062.GLASSES (IDGLASS,STRGLASS) values ('31','Coupe Glass');
+--------------------------------------------------------
+--  DDL for Index GLASSES_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "ANHQUOC4062"."GLASSES_PK" ON "ANHQUOC4062"."GLASSES" ("IDGLASS") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  Constraints for Table GLASSES
+--------------------------------------------------------
+
+  ALTER TABLE "ANHQUOC4062"."GLASSES" MODIFY ("IDGLASS" NOT NULL ENABLE);
+  ALTER TABLE "ANHQUOC4062"."GLASSES" ADD CONSTRAINT "GLASSES_PK" PRIMARY KEY ("IDGLASS")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "USERS"  ENABLE;
